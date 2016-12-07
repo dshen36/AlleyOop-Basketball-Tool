@@ -1,0 +1,96 @@
+.player_background {
+	width: 250px;
+	height: 500px;/*
+    max-height: 500px;
+    max-width: 250px;*/
+	padding: 10px;
+  margin-top: 0;
+	/*display: inline-block;*/
+}
+
+.court {
+	width: 500px;
+	height: 500px;
+    max-width: 100%;
+    max-height: 100%;
+	background-image: url('../images/halfcourt_background.png');
+    background-size: contain;
+    background-position: 50% 50%;
+	background-repeat: no-repeat;
+  background-position: center; /*attempt to center the court*/
+	/*position: relative;*/ /* need for later on when we draw elements inside of this*/
+	z-index: -100;
+  margin: auto;
+	/*display: inline-block;*/
+}
+
+/*.player_name,
+.player_name2,
+.season_year,
+.season_year2,
+.team_name,
+.team_name2,
+.game_date,
+.game_date2 {
+	 width:200px;
+}*/
+
+#name {
+	line-height: 40px;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.dot {
+  stroke: #000;
+}
+
+.tooltip {
+  /* height and width should be dependent on the size of the text */
+  padding: 4px;
+  position: absolute;
+  pointer-events: none;
+  background: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  border: 3px solid black;
+  border-radius: 5px;
+}
+
+.playerInfo {
+	font-weight: bold;
+}
+
+.equalheight {
+    overflow: hidden; 
+}
+
+/* Bootstrap default has 20px bottom margin */
+.navbar {
+    margin-bottom: 0;
+    min-height:20px;
+}
+
+.color-block {
+    width: 49%; /*how to make it 50 and still be on same line?*/
+    display: inline-block;
+    text-align: center;
+    margin: 0;
+}
+
+.color-choices {
+    border-bottom: 2px solid gray;
+    padding-bottom: 10px;
+}
+
+#home-panel {
+  border: 5px solid blue;
+}
+
+#away-panel {
+  border: 5px solid red;
+}
